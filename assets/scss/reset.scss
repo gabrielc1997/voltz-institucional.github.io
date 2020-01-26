@@ -1,0 +1,36 @@
+//START BODY
+html,body{
+    background: $body;
+    margin:0!important;
+    padding: 0!important;
+    font-family: 'Akzidenz-Regular' sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  .modal-open{overflow:unset!important; padding: 0px!important;} // Essa classe modal open aplica um padding ao abrir o modal //
+  nav{padding-right: 0px!important;}  // retira o padding ao abrir o modal //
+  button{cursor:pointer!important;}
+  
+  a{text-decoration: none!important; color: none;}
+  @font-face {
+    font-family: 'Akzidenz-light' sans-serif;
+    font-weight: 300;
+    src: url(../fonts/AkzidenzGrotesk-Light.otf);
+  }
+  @font-face {
+    font-family: 'Akzidenz-Regular' sans-serif;
+    font-weight: 400;
+    src: url(../fonts/Akzidenz-Grotesk-Medium.otf);
+  }
+  // END BODY
+  
+  
+  // ---------> START MIXINS <---------- // 
+  @mixin ArrowCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
