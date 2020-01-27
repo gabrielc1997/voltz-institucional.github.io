@@ -1,4 +1,3 @@
-///////// COLORS /////////
 @mixin defineColor($class, $color) {
     .c-#{$class} {
         color: $color !important;
@@ -19,7 +18,10 @@
         border-color: $color !important;
     }
 }
-@include defineColor('jade-green', $jade-green);
-@include defineColor('charcoal-grey', $charcoal-grey);
+
 @include defineColor('white', $white);
-@include defineColor('body', $body);
+@include defineColor('gray', $gray);
+@include defineColor('orange', $orange);
+@include defineColor('purple', $purple);
+@include defineColor('yellow', $yellow);
+@include defineColor('green', $green);
