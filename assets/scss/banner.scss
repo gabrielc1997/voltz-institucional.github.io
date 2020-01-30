@@ -1,8 +1,21 @@
-.banner{
+.banner {
+  height: 100vh;
+  background-image: url("https://pleno.news/wp-content/uploads/2019/09/plenonews_69429078_424547198412357_2917137491588994799_n-1024x684.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    height: 100vh;
-    background-image: url("https://pleno.news/wp-content/uploads/2019/09/plenonews_69429078_424547198412357_2917137491588994799_n-1024x684.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  button {
+    width: 30%;
+    height: 50px;
+    margin-top: 15px;
+    background-color: $purple;
+    border: none;
+    color: $white;
+    &:hover {
+      transition: $transition;
+      -webkit-box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.49);
+      -moz-box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.49);
+      box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.49);
+    }
+  }
 }
