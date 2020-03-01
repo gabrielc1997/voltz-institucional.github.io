@@ -10,6 +10,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Voltz institucional</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -87,11 +88,11 @@
 
 
 
-    <section class="text-info bgc-purple">
+    <section class="text-info bgc-white">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center pl-4 pr-4">
+                    <h3 class="text-center c-black pl-4 pr-4">
                         lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
 
                     </h3>
@@ -106,8 +107,8 @@
 
     <section class="fazemos">
         <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-md-4">
+            <div class="main-carousel">
+                <div class="carousel-cell">
                     <div class="box-border d-flex align-items-center flex-column">
                         <img src="https://react-icons.netlify.com/static/media/react-icons.2e67b430.svg">
                         <h2>
@@ -121,7 +122,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="carousel-cell">
                     <div class="box-border d-flex align-items-center flex-column">
                         <img src="https://react-icons.netlify.com/static/media/react-icons.2e67b430.svg">
                         <h2>
@@ -135,7 +136,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="carousel-cell">
                     <div class="box-border d-flex align-items-center flex-column">
                         <img src="https://react-icons.netlify.com/static/media/react-icons.2e67b430.svg">
                         <h2>
@@ -161,7 +162,7 @@
 
     <section class="produto">
         <div class="container">
-            <div class="row">
+            <div class="d-flex flex-column flex-md-row">
                 <div class="col-md-6">
                     <img src="https://pleno.news/wp-content/uploads/2019/09/plenonews_69429078_424547198412357_2917137491588994799_n-1024x684.jpg"
                         class="img-fluid" alt="">
@@ -177,7 +178,7 @@
 
     <section class="produto">
         <div class="container">
-            <div class="row">
+            <div class="d-flex flex-column-reverse flex-md-row">
                 <div class="col-md-6 align-items-center d-flex">
                     <p>
                         lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
@@ -193,149 +194,64 @@
     </section>
 
 
-<!-- Footer -->
-<footer class="page-footer font-small blue-grey lighten-5">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
 
-        <div style="background-color: #21d192;">
-          <div class="container">
-      
-            <!-- Grid row-->
-            <div class="row py-4 d-flex align-items-center">
-      
-              <!-- Grid column -->
-              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                <h6 class="mb-0">Get connected with us on social networks!</h6>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-6 col-lg-7 text-center text-md-right">
-      
-                <!-- Facebook -->
-                <a class="fb-ic">
-                  <i class="fab fa-facebook-f white-text mr-4"> </i>
-                </a>
-                <!-- Twitter -->
-                <a class="tw-ic">
-                  <i class="fab fa-twitter white-text mr-4"> </i>
-                </a>
-                <!-- Google +-->
-                <a class="gplus-ic">
-                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                </a>
-                <!--Linkedin -->
-                <a class="li-ic">
-                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                </a>
-                <!--Instagram-->
-                <a class="ins-ic">
-                  <i class="fab fa-instagram white-text"> </i>
-                </a>
-      
-              </div>
-              <!-- Grid column -->
-      
+        <div class="bgc-purple">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 c-white">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
             </div>
-            <!-- Grid row-->
-      
-          </div>
         </div>
-      
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5">
-      
-          <!-- Grid row -->
-          <div class="row mt-3 dark-grey-text">
-      
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-      
-              <!-- Content -->
-              <h6 class="text-uppercase font-weight-bold">Company name</h6>
-              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur
-                adipisicing elit.</p>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-      
-              <!-- Links -->
-              <h6 class="text-uppercase font-weight-bold">Products</h6>
-              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <a class="dark-grey-text" href="#!">MDBootstrap</a>
-              </p>
-              <p>
-                <a class="dark-grey-text" href="#!">MDWordPress</a>
-              </p>
-              <p>
-                <a class="dark-grey-text" href="#!">BrandFlow</a>
-              </p>
-              <p>
-                <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
-              </p>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-      
-              <!-- Links -->
-              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <a class="dark-grey-text" href="#!">Your Account</a>
-              </p>
-              <p>
-                <a class="dark-grey-text" href="#!">Become an Affiliate</a>
-              </p>
-              <p>
-                <a class="dark-grey-text" href="#!">Shipping Rates</a>
-              </p>
-              <p>
-                <a class="dark-grey-text" href="#!">Help</a>
-              </p>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-      
-              <!-- Links -->
-              <h6 class="text-uppercase font-weight-bold">Contact</h6>
-              <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-              <p>
-                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p>
-                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-      
-            </div>
-            <!-- Grid column -->
-      
-          </div>
-          <!-- Grid row -->
-      
-        </div>
-        <!-- Footer Links -->
-      
+
+
+
         <!-- Copyright -->
         <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
-          <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            <a class="dark-grey-text" href="http://voltz.tech"> VoLTz.tech</a>
         </div>
         <!-- Copyright -->
-      
-      </footer>
-      <!-- Footer -->
+
+    </footer>
+    <!-- Footer -->
 
 
 
@@ -353,6 +269,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
