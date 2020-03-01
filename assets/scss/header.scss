@@ -1,10 +1,16 @@
 .header{
     nav{
-        background-color: rgba(255,255,255,0.70);
+        background-color: $white;
         transition: $transition;
         margin-bottom: 40px;
     }
     img{
         height: 40px;
     }
+}
+.show{
+    transition: $transition;
+}
+.hide1{
+    transition: $transition;
 }

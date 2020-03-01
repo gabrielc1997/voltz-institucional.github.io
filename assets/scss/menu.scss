@@ -1,0 +1,20 @@
+
+@media screen and ( max-width: 768px ) {
+    .collapse {
+        height: 100vh;
+        background-color: $white;
+        .nav-item:nth-child(1){
+          border-top: 1px solid black;
+          margin-top: 20px;
+        }
+        .nav-item {
+          padding-top: 10px;
+      
+          border-bottom: 1px solid black;
+      
+          .nav-link {
+            text-align: center;
+          }
+        }
+      }
+  }

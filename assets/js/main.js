@@ -28,6 +28,16 @@ $(function() {
 
 
 
+function transicao () {
+    if ($('#conteudoNavbarSuportado').hasClass(show)){
+        $(this).removeClass(hide1);
+    }
+    else {
+        $(this).addClass(hide1);
+    }
+    return
+}
+
 
 
 
@@ -85,3 +95,8 @@ $('.main-carousel').flickity({
     freeScroll: false,
     wrapAround: true
   });
+
+
+
+
+
