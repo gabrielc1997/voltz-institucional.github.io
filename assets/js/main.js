@@ -93,7 +93,8 @@ $('.main-carousel').flickity({
     contain: true,
     prevNextButtons: false,
     freeScroll: false,
-    wrapAround: true
+    wrapAround: false,
+    pageDots: false
   });
 
 

@@ -1,5 +1,8 @@
 .fazemos{
     margin-bottom: 30px;
+    .upper{
+        text-transform: uppercase;
+    }
     .box-border{
         border: 1px solid black;
         // padding: 5px;
@@ -11,18 +14,35 @@
         // }
 
     }
-    img{
-        width: 40px;
+    .img-card{
+        background-image: url("https://pleno.news/wp-content/uploads/2019/09/plenonews_69429078_424547198412357_2917137491588994799_n-1024x684.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 184px;
+        width: 100%;
+
+    }
+    .text-card{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 10px;
+        }
     }
 }
 
-.carousel-cell {
-    width: 100%; /* full width */
-    height: 160px; /* height of carousel */
-    margin-right: 10px;
+// .carousel-cell {
+//     width: 100%; /* full width */
+//     height: 400px; /* height of carousel */
 
-  }
-  @media screen and ( min-width: 768px ) {
-    /* half-width cells for larger devices */
-    .carousel-cell { width: 50%; }
-  }
+//     margin-right: 7px;
+//     margin-left: 7px;
+
+//   }
+//   @media screen and ( min-width: 768px ) {
+//     /* half-width cells for larger devices */
+//     .carousel-cell { width: 25%; }
+//   }
